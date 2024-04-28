@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: loksai-mvn-container
-        image: biswa8342/mvn-pipeline-job
+        image: biswa8342/spider-image:latest
         ports:
         - containerPort: 8080
 ---
@@ -33,5 +33,5 @@ spec:
   type: NodePort
   ports:
   - nodePort: 32000
-    port: 8080
+    port: 8082
     targetPort: 8080
