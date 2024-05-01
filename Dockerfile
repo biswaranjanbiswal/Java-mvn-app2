@@ -1,4 +1,4 @@
-FROM chainguard/tomcat
+FROM chainguard/tomcat:latest
 COPY target/mvn-hello-world.war /usr/local/tomcat/webapps
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
